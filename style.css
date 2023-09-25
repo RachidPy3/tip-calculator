@@ -38,11 +38,42 @@ body{
 }
 
 .main-div{
+    display: flex;
+    flex-direction: row;
     width: 600px;
     height: 325px;
     margin-top: 5%;
-    padding: 10px;
+    padding: 20px;
     background-color: var(--White);
     border-radius: 25px;
-    box-shadow: 1px 2px 13px 3px rgba(94, 122, 125, 0.2);
+    box-shadow: 1px 2px 13px 3px hsla(183, 100%, 15%, 0.2);
+}
+
+.bill{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: var(--Grayish-cyan);
+    margin: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus{
+    outline: 1px solid var(--Strong-cyan);
+}
+
+#bill-input{
+    border: none;
+    border-radius: 4px;
+    background-color: var(--Very-light-grayish);
+    color: var(--Grayish-cyan);
+    padding: 5px;
+    text-align: right;
 }

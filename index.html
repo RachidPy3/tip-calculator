@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tip calculator app</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="container">
@@ -13,11 +14,19 @@
     </div>
 
     <div class="main-div">
-      <div class="input-section">test</div>
+      <div class="input-section">
+        <div class="bill">
+          <label for="bill-input">Bill</label>
+          <input type="number" id="bill-input" placeholder="0">
+        </div>
+
+        <div class="tip-type"></div>
+
+        <div class="people-number"></div>
+      </div>
+
       <div class="display-section"></div>
     </div>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
